@@ -1,0 +1,101 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f8f8f8;
+}
+
+header {
+  position: relative;
+}
+
+.banner-container {
+  max-height: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid darkgrey;
+}
+
+.banner {
+  width: 100%;
+  filter: blur(2px);
+}
+
+.image-container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  left: calc(50% - 100px);
+  border: 1px solid darkgrey;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+main {
+  margin-top: 8em;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.3em;
+  line-height: 3em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.social-medias-container {
+  margin-top: 2em;
+}
+
+.social-medias {
+  font-size: 3em;
+  display: block;
+  text-align: center;
+}
+
+.social-medias li {
+  display: inline-block;
+  margin: 0 0.25em;
+}
+
+.social-medias a {
+  all: unset;
+  cursor: pointer;
+}
+
+* {
+  color: #222222;
+}
+
+@media screen and (max-width: 528px) {
+  .name, .social-medias {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-container {
+    width: 150px;
+    height: 150px;
+    bottom: -75px;
+    left: calc(50% - 75px);
+  }
+}
