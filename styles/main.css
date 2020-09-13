@@ -74,6 +74,11 @@ footer {
 .social-medias li {
   display: inline-block;
   margin: 0 0.25em;
+  transition: all 300ms;
+}
+
+.social-medias li:hover {
+  transform: translateY(-5px) scale(1.3);
 }
 
 .social-medias a {
@@ -85,13 +90,23 @@ footer {
   color: #222222;
 }
 
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 1279px) {
+  .social-medias li {
+    transition: unset;
+  }
+  
+  .social-medias li:hover {
+    transform: unset;
+  }
+}
+
+@media screen and (max-width: 569px) {
   .name, .social-medias {
     font-size: 2em;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .image-container {
     width: 150px;
     height: 150px;
