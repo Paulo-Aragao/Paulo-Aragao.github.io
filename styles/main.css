@@ -101,8 +101,12 @@ footer {
 }
 
 @media screen and (max-width: 569px) {
-  .name, .social-medias {
+  .name{
     font-size: 2em;
+  }
+
+  .social-medias {
+    font-size: 2.5em;
   }
 }
 
