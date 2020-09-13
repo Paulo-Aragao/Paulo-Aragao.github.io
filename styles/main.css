@@ -10,14 +10,23 @@ header {
 .banner-container {
   max-height: 40vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border-bottom: 1px solid darkgrey;
 }
 
 .banner {
   width: 100%;
-  filter: blur(2px);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 .image-container {
@@ -25,16 +34,21 @@ header {
   width: 200px;
   height: 200px;
   bottom: -100px;
+  left: -webkit-calc(50% - 100px);
+  left: -moz-calc(50% - 100px);
   left: calc(50% - 100px);
   border: 1px solid darkgrey;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   background-color: white;
   overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 main {
@@ -74,11 +88,18 @@ footer {
 .social-medias li {
   display: inline-block;
   margin: 0 0.25em;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  -moz-transition: all 300ms;
   transition: all 300ms;
 }
 
 .social-medias li:hover {
-  transform: translateY(-5px) scale(1.3);
+  -webkit-transform: translateY(-5px) scale(1.3);
+     -moz-transform: translateY(-5px) scale(1.3);
+      -ms-transform: translateY(-5px) scale(1.3);
+       -o-transform: translateY(-5px) scale(1.3);
+          transform: translateY(-5px) scale(1.3);
 }
 
 .social-medias a {
@@ -92,11 +113,18 @@ footer {
 
 @media screen and (max-width: 1279px) {
   .social-medias li {
+    -webkit-transition: unset;
+    -o-transition: unset;
+    -moz-transition: unset;
     transition: unset;
   }
   
   .social-medias li:hover {
-    transform: unset;
+    -webkit-transform: unset;
+       -moz-transform: unset;
+        -ms-transform: unset;
+         -o-transform: unset;
+            transform: unset;
   }
 }
 
@@ -115,6 +143,8 @@ footer {
     width: 150px;
     height: 150px;
     bottom: -75px;
+    left: -webkit-calc(50% - 75px);
+    left: -moz-calc(50% - 75px);
     left: calc(50% - 75px);
   }
 }
