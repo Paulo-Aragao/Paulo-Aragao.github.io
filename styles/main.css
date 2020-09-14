@@ -111,23 +111,6 @@ footer {
   color: #222222;
 }
 
-@media screen and (max-width: 1279px) {
-  .social-medias li {
-    -webkit-transition: unset;
-    -o-transition: unset;
-    -moz-transition: unset;
-    transition: unset;
-  }
-  
-  .social-medias li:hover {
-    -webkit-transform: unset;
-       -moz-transform: unset;
-        -ms-transform: unset;
-         -o-transform: unset;
-            transform: unset;
-  }
-}
-
 @media screen and (max-width: 569px) {
   .name{
     font-size: 2em;
