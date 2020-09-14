@@ -20,7 +20,6 @@ header {
      -moz-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-bottom: 1px solid darkgrey;
 }
 
 .banner {
@@ -37,7 +36,6 @@ header {
   left: -webkit-calc(50% - 100px);
   left: -moz-calc(50% - 100px);
   left: calc(50% - 100px);
-  border: 1px solid darkgrey;
   -webkit-border-radius: 50%;
      -moz-border-radius: 50%;
           border-radius: 50%;
