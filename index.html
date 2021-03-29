@@ -1,58 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
+    <link rel="icon" href="images/icon.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Anderson Medeiros</title>
+    <link rel="stylesheet" href="styles/projects.css">
+    <title>Paulo Aragão</title>
   </head>
   <body>
-    <header>
-      <div class="banner-container">
-        <img
-          src="images/banner.jpg"
-          alt="people working on laptops"
-          class="banner"
-        >
-      </div>
-      <div class="image-container">
-        <img src="images/user-image.jpeg" alt="developer's face">
-      </div>
-    </header>
-    <main>
-      <h2 class="name">
-        Anderson Medeiros
-        <span class="subtitle">
-          Agile | JS | Python | React | Vue | Flask | Django
-        </span>
-      </h2>
-    </main>
-    <footer>
-      <ul class="social-medias">
-        <li>
-          <a href="https://www.linkedin.com/in/anderson-medeiros-ab4b7b14a/" target="_blank">
-            <span class="iconify" data-icon="ion-social-linkedin-outline" data-inline="false"></span>
+    <header class="header">
+      <h1>
+        <ul class="list">
+        <a class= "bar-text">
+          <button id="button-main" class= "bar-text">
+            Paulo Aragão
+          </button>
+        </a>
+        </ul>
+      </h1>
+      <ul class="list">
+        <li class="list__item">
+          <a href="https://medium.com/@paulotorres12/" target="_blank" >
+            <img src="images/social-icons/medium.png" alt="medium" height="40px">
           </a>
         </li>
-        <li>
-          <a href="http://github.com/andersonSMed/" target="_blank">
-            <span class="iconify" data-icon="ion-social-github-outline" data-inline="false"></span>
+        <li class="list__item">
+          <a href="http://github.com/paulocosmico/" target="_blank">
+            <img src="images/social-icons/github.png" alt="github" height="40px">
           </a>
         </li>
-        <li>
-          <a href="https://wa.me/5584987809837" target="_blank">
-            <span class="iconify" data-icon="ion-social-whatsapp-outline" data-inline="false"></span>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:anderson.santos.medeiros@hotmail.com">
-            <span class="iconify" data-icon="clarity:email-line" data-inline="false"></span>
+        <li class="list__item">
+          <a href="mailto:paulo.aragao.613@ufrn.edu.br">
+            <img src="images/social-icons/email.png" alt="email" height="40px">
           </a>
         </li>
       </ul>
-    </footer>
+    </h1>
+    </header>
+    <main>
+      <div id = "div-main">
+        <h2 class="name">
+          <br>
+          <br>
+          Paulo Aragão
+          <p class="subtitle">
+            Information Technology Bachelor - UFRN.<br>
+            Enthusiast in the production of digital games and data sciences.
+            <br>I have already worked on some projects linked to UFRN and on freelance projects.<br>I have skills in:
+            <br><a> Unity - C# - Python - Pandas - Scikit-learn - TensorFlow </a>
+            you can get to know more of my skills on my github and medium.
+          </p>
+        </h2>
+      </div>
+      <div>
+        <p class="footer">
+          Fortaleza-CE, Brazil
+        </p>
+      </div>
+    </main>
   </body>
 </html>
