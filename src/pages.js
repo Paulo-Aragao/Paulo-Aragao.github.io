@@ -1,4 +1,4 @@
-var div_main;
+/*var div_main;
 var div_projects;
 var div_button;
 
@@ -22,4 +22,4 @@ function showMain(){
     div_main.classList.remove("hidden");
     div_projects.classList.add("hidden");
     div_buttons.classList.remove("hidden");
-}
+}*/
