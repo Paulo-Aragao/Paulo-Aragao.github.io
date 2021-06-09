@@ -4,7 +4,7 @@ html{
 
 body {
   font-family: 'fantasy', 'Luminari';
-  background-image: url("../images/bg.jpg");
+
 }
 header {
   position: relative;
@@ -135,16 +135,24 @@ div.technologies {
   font-size: 0.4em;
   display: block;
 }
+.responsive {
+  width: 100%;
+  height: auto;
+  align-content: center;
+}
 * {
   color: #222222;
 }
 section{
   position: sticky;
+  background-color: rgb(220, 228, 231);
 }
 #sec1{
+  top: 0;
   height:   95vh;
 }
 #sec3{
+  top: 0;
   height:   100vh;
 }
 
