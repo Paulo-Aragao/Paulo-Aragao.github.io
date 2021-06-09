@@ -48,7 +48,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-	 .prev, .next{
+	.next{
 		width: 12%;
 		height: inherit;
 		position: absolute;
@@ -60,7 +60,18 @@
 		cursor: pointer;
 		text-align: center;
 	}
-
+    .prev{
+        width: 12%;
+		height: inherit;
+		position: absolute;
+		top:0; 
+		background-color: rgba(153, 147, 147, 0.2);
+		color:rgba(177, 165, 165, 0.9);
+		z-index: 99;
+		transition: .45s;
+		cursor: pointer;
+		text-align: justify;
+    }
 	.next{right:0;}
 	.prev{left:0;}
 
