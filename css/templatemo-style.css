@@ -16,9 +16,15 @@ text light dark: #747474;
 header 1 mb: 25px;
 header 2 mb: 45px;
 header 3 mb: 35px;
-header 4 & 5 mb: 50px;
-others mb: 40px;
+header 4 & 5 mb: 50px;  
+others mb: 40px;  
 */
+
+:root {
+  --colorMain: #1f6966;
+  --colorContainer: #555555;
+  --colorDetail: #4deeab60;
+}
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -49,7 +55,7 @@ a { transition: all 0.3s ease; }
 a.tm-text-light-dark:hover { color: #747474; }
 
 .tm-top-bar {
-  background-color: #1f6966;
+  background-color: var(--colorMain);
   max-width: 925px;
   width: 100%;
   height: 30px;
@@ -57,7 +63,7 @@ a.tm-text-light-dark:hover { color: #747474; }
 }
 
 .tm-bar-2 {
-  background-color: #1f6966;
+  background-color:  var(--colorDetail);
   width: 100%;
   height: 15px;
   margin-top: 10px;
@@ -81,7 +87,7 @@ a.tm-text-light-dark:hover { color: #747474; }
 .tm-welcome { display: flex; }
 
 .tm-welcome-left {
-  background-color: #555555;
+  background-color:  var(--colorMain);
   padding: 80px;
   max-width: 925px;
   width: 84%;
@@ -181,13 +187,13 @@ p {
 }
 
 .tm-img-container-3 {
-  background-image: url(../img/backpack-guy.jpg);
+  background-image: url(../img/backpack-guy.png);
   background-position: top right;
 }
 
 .tm-img { width: 49%; }
-.tm-bg-primary { background-color: #555555; }
-.tm-bg-accent { background-color: #555555; }
+.tm-bg-primary { background-color: var(--colorMain); }
+.tm-bg-accent { background-color: var(--colorMain); }
 
 .tm-section-3-left {
   padding: 70px 100px 80px 120px;
@@ -224,7 +230,7 @@ p {
 .slick-dots li.slick-active button:before,
 .slick-dots li:hover button:before {
   opacity: 1;
-  color: #32a19e; 
+  color: var(--colorDetail); 
 }
 
 .slick-dots li button { width: 30px; }
@@ -268,22 +274,22 @@ p {
 
 .form-control {
   border: none;
-  border-bottom: 1px solid #1f6966;
+  border-bottom: 1px solid var(--colorDetail);
   border-radius: 0;
 }
 
 .form-control:focus {
-  border-bottom: 2px solid #0d3332;
+  border-bottom: 2px solid var(--colorContainer);
   box-shadow: none;
 }
 
 .btn-primary {
-  background-color: #1f6966;
+  background-color: var(--colorDetail);
   border-color: #CC9999;
 }
 
 .btn-primary:hover {
-  background-color: #104644;
+  background-color: var(--colorContainer);
   border-color: #ac4747;
 }
 
@@ -300,6 +306,7 @@ p {
     float: left;
     overflow: hidden;
     height: auto;
+    width: 100px;
     background: #3085a3;
     text-align: center;
     cursor: pointer;
