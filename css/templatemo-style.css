@@ -1,4 +1,4 @@
-/*
+/*container
 
 Beauty Template
 
@@ -19,6 +19,30 @@ header 3 mb: 35px;
 header 4 & 5 mb: 50px;  
 others mb: 40px;  
 */
+
+.logos-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 :root {
   --colorMain: #1f6966;
@@ -174,18 +198,37 @@ p {
   height: 100%;
   background-repeat: no-repeat;
 }
-
-.tm-img-container-1 {
-  background-image: url(../img/green-tree-red-cup.jpg);
+/*
+.tm-img-container-a {
+  background-image: url(../img/inspirations/insp1.gif);
   background-position: top center;
 }
 
-.tm-img-container-2 {
-  background-image: url(../img/girl-01.jpg);
+.tm-img-container-b {
+  background-image: url(../img/inspirations/insp3.gif);
   background-position: top center;
   margin-left: 8px;
 }
+.tm-img-container-c {
+  background-image: url(../img/inspirations/insp3.gif);
+  background-position: top center;
+  margin-left: 8px;
+}*/
+.tm-img-container-a {
+  background-image: url(../img/inspirations/1.png);
+  background-position: top center;
+}
 
+.tm-img-container-b {
+  background-image: url(../img/inspirations/2.png);
+  background-position: top center;
+  margin-left: 8px;
+}
+.tm-img-container-c {
+  background-image: url(../img/inspirations/3.png);
+  background-position: top center;
+  margin-left: 8px;
+}
 .tm-img-container-3 {
   background-image: url(../img/backpack-guy.png);
   background-position: top right;
