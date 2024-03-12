@@ -20,6 +20,31 @@ header 4 & 5 mb: 50px;
 others mb: 40px;  
 */
 
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  color: white;
+}
+.circulo {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%; /* Define a forma circular */
+  background-color: var(--colorMain); /* Cor de fundo do círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circulo p {
+  margin: 0; /* Remove margem padrão do parágrafo */
+  padding: 10px; /* Adiciona um espaço interno */
+}
+
+
 .logos-section {
   text-align: center;
   padding: 50px 0;
@@ -292,7 +317,7 @@ p {
   margin-right: auto;
 }
 
-.tm-contact-left-inner { width: 50%; }
+.tm-contact-left-inner { width: 60%; }
 
 .tm-contact-form {
   padding-top: 120px;
